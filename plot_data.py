@@ -60,9 +60,9 @@ def plot_and_show(file_path, mark_peak=True):
             # Annotate the peak coordinates
             plt.text(max_x, max_y, f'Peak: ({max_x:.3f}, {max_y:.3f})', ha='right', va='bottom')
 
-        plt.xlabel('Voltage (V)')
-        plt.ylabel('Current (I)')
-        plt.title(f'Voltage vs. Current for Sample {data["sample"]}')
+        plt.xlabel('Voltage (V)', fontsize=14)
+        plt.ylabel('Current (A)', fontsize=14)
+        plt.title(f'Voltage vs. Current for Sample {data["sample"]}', fontsize=14)
         plt.legend()
 
         # Display the plot
