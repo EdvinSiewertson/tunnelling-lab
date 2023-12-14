@@ -80,10 +80,10 @@ def plot_and_show(file_path, mark_peak=True):
         return None
 
 # Data files
-files = ['Data/A5_2.txt', 'Data/B4_2.txt', 'Data/C1.txt', 'Data/D3.txt']
+files = ['data/A5_2.txt', 'data/B4_2.txt', 'data/C1.txt', 'data/D3.txt']
 
 for file_path in files:
-    mark_peak = file_path in ['Data/A5_2.txt', 'Data/B4_2.txt']
+    mark_peak = file_path in ['data/A5_2.txt', 'data/B4_2.txt']
     result = plot_and_show(file_path, mark_peak)
 
     # Print additional information if the result is not None
